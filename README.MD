@@ -1,60 +1,57 @@
-# 1 - Introduction
+# Rust Cheat Sheet
 
-- What is Rust?
-- Why use Rust?
-- Memory Safety and Zero-Cost Abstractions
 
-## 1.1 - Environment Setup
 
-- Installing Rust and Cargo
-- IDEs and Rust Toolchains
-- Rust REPL (Rust Playground)
+---
 
-# 2 - Language Basics
+#### **Comandos de Cargo (Gestor de Proyectos en Rust)**
 
-## 2.1 - Syntax and Semantics
+```sh
+cargo new <proyecto>        # Crear un nuevo proyecto de Rust
+cargo build                 # Compilar el proyecto
+cargo run                   # Compilar y ejecutar el proyecto
+cargo check                 # Verificar errores sin compilar
+cargo clean                 # Eliminar archivos de compilación
+cargo update                # Actualizar dependencias en Cargo.toml
+cargo add <dependencia>     # Agregar una dependencia al proyecto
+cargo remove <dependencia>  # Eliminar una dependencia
+cargo doc --open            # Generar y ver documentación del proyecto
+cargo test                  # Ejecuta pruebas
+```
 
-- Variables, Constants, and Data Types
-- Control Flow Constructs
-- Functions and Method Syntax
-- Pattern Matching and Destructuring
+#### **Comandos de `rustc` (Compilador de Rust)**
 
-## 2.2 - Ownership System
+```sh
+rustc --version         # Ver versión de Rust instalada
+rustc main.rs           # Compilar un archivo Rust manualmente
+./main                  # Ejecutar el binario compilado
+```
 
-- Ownership Rules and Memory Safety
-- Borrowing, References, and Slices
-- Deep Dive: Stack vs Heap
+#### **Comandos de `rustup` (Gestor de Rust)**
 
-## 2.3 - Constructs
+```sh
+rustup show                  # Ver la versión actual de Rust y el toolchain usado
+rustup update                # Actualizar Rust a la última versión
+rustup default stable         # Configurar la versión estable por defecto
+rustup install nightly        # Instalar la versión nightly de Rust
+rustup target list            # Listar plataformas de compilación disponibles
+rustup component add clippy   # Instalar Clippy (linter para Rust)
+rustup component add rustfmt  # Instalar Rustfmt (formateador de código)
+```
 
-- Enums
-- Structs
-- Traits
-- Impl Blocks
+#### **Comandos de `rustfmt` (Formateador de código)**
 
-## 2.4 - Data Structures
+```sh
+rustfmt main.rs       # Formatear un archivo Rust
+cargo fmt             # Formatear todo el proyecto
+```
 
-- Integers
-- Floats
-- Boolean
-- Character
-- Tuple
-- Array
-- Vector
-- String
-- Hashmap
-- Hashset
-- LinkedList
-- BinaryHeap
-- Stack
-- Queue
+#### **Comandos de `clippy` (Linter para Rust)**
 
-### 2.4.1 - Advanced
+```sh
+cargo clippy         # Revisar el código en busca de mejoras y optimización
+```
 
-- BTreeMap
-- BTreeSet
-- Rc
-- Arc
-- Mutex
-- RwLock
-- Channels
+# bibliography
+
+- **[Commands List](https://doc.rust-lang.org/cargo/commands/index.html)** - Lista de comandos que pueden servirte.
