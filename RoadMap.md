@@ -65,6 +65,11 @@
 * Unit & Integration Testing
 * Mocking & Property Based Testing
 
+#### Concurrency & Parallelism
+* Threads, Channels and Message Passing
+* Atomic Operations & Memory Barriers
+* Futures and Async/Await Paradigm
+
 # bibliography
 
 - [Rust Roadmap](https://roadmap.sh/rust)
