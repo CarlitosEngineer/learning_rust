@@ -1,57 +1,44 @@
-# Rust Cheat Sheet
+# 🦀 Aprendizaje de Rust — Repositorio Personal
 
+Este repositorio ha sido creado con el objetivo principal de facilitar mi proceso de **aprendizaje, enseñanza y experimentación** con el lenguaje de programación **Rust**.
 
+## 🎯 Propósito
 
----
+El propósito central de este proyecto es:
 
-#### **Comandos de Cargo (Gestor de Proyectos en Rust)**
+* Reforzar conocimientos fundamentales y avanzados del lenguaje Rust mediante la práctica.
+* Servir como material de apoyo para futuras referencias personales o para enseñar a otros interesados.
+* Explorar y probar fragmentos de código real a través de ejemplos ejecutables.
 
-```sh
-cargo new <proyecto>        # Crear un nuevo proyecto de Rust
-cargo build                 # Compilar el proyecto
-cargo run                   # Compilar y ejecutar el proyecto
-cargo check                 # Verificar errores sin compilar
-cargo clean                 # Eliminar archivos de compilación
-cargo update                # Actualizar dependencias en Cargo.toml
-cargo add <dependencia>     # Agregar una dependencia al proyecto
-cargo remove <dependencia>  # Eliminar una dependencia
-cargo doc --open            # Generar y ver documentación del proyecto
-cargo test                  # Ejecuta pruebas
+## 📁 Estructura del Repositorio
+
+El contenido está organizado de manera clara para facilitar la navegación, el estudio y la ejecución de los ejemplos:
+
+```
+.
+├── src/
+│   ├── bin/
+│   │   └── Archivos ejecutables de ejemplo (.rs)
+│   └── Otras carpetas y archivos fuente de proyectos Rust
+├── md/
+│   └── Hojas de trucos y comandos útiles en formato Markdown (.md)
 ```
 
-#### **Comandos de `rustc` (Compilador de Rust)**
+### 📂 `src/bin/`
 
-```sh
-rustc --version         # Ver versión de Rust instalada
-rustc main.rs           # Compilar un archivo Rust manualmente
-./main                  # Ejecutar el binario compilado
-```
+Contiene archivos ejecutables de Rust (`*.rs`) con ejemplos prácticos, enfocados al testeo y comprensión de distintas características del lenguaje.
 
-#### **Comandos de `rustup` (Gestor de Rust)**
+### 📂 `md/`
 
-```sh
-rustup show                  # Ver la versión actual de Rust y el toolchain usado
-rustup update                # Actualizar Rust a la última versión
-rustup default stable         # Configurar la versión estable por defecto
-rustup install nightly        # Instalar la versión nightly de Rust
-rustup target list            # Listar plataformas de compilación disponibles
-rustup component add clippy   # Instalar Clippy (linter para Rust)
-rustup component add rustfmt  # Instalar Rustfmt (formateador de código)
-```
+Incluye **hojas de trucos** (cheat sheets) y apuntes en formato Markdown. Estos archivos están diseñados para reforzar el aprendizaje mediante resúmenes claros, comandos frecuentes y ejemplos útiles.
 
-#### **Comandos de `rustfmt` (Formateador de código)**
+## 🧭 Enfoque Pedagógico
 
-```sh
-rustfmt main.rs       # Formatear un archivo Rust
-cargo fmt             # Formatear todo el proyecto
-```
+Este repositorio sigue la lógica de aprendizaje sugerida por la plataforma [roadmap.sh](https://roadmap.sh/), utilizándola **únicamente como guía de estructura temática**. Cabe resaltar que:
 
-#### **Comandos de `clippy` (Linter para Rust)**
+> **Todo el contenido de este repositorio ha sido creado 100% por mí.**
+> No se han copiado fragmentos de código, imágenes, textos ni recursos visuales directamente desde roadmap.sh u otras fuentes. Cada archivo, ejemplo y anotación es de autoría propia.
 
-```sh
-cargo clippy         # Revisar el código en busca de mejoras y optimización
-```
+## 🚧 Estado Actual
 
-# bibliography
-
-- **[Commands List](https://doc.rust-lang.org/cargo/commands/index.html)** - Lista de comandos que pueden servirte.
+El proyecto se encuentra en constante desarrollo y expansión. A medida que avanzo en el estudio de Rust, seguiré incorporando nuevos módulos, ejemplos y hojas de referencia.
