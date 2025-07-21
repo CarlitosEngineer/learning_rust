@@ -18,8 +18,8 @@ Fuente consultada:
 */
 
 fn learning_variables1() {
-    let variable_1: i32 = 10; // Nombre de la variable "variable_1", Tipo de la variable. (DATO EXPLICITO, NOT INFERIDO)
-    let variable_2 = 100; // Nombre de la variable "variable_2", Tipo de la variable. (DATO IMPLICITO, INFERIDO)
+    let variable_1: i32 = 10; // Nombre de la variable "variable_1", Tipo de la variable i32. (DATO EXPLICITO, NOT INFERIDO)
+    let variable_2 = 100; // Nombre de la variable "variable_2", Tipo de la variable i32. (DATO IMPLICITO, INFERIDO)
     println!("La variable 1 vale: {}", variable_1);
     println!("La variable 2 vale: {}", variable_2);
 }
