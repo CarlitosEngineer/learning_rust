@@ -12,3 +12,7 @@ fn testing_datatypes_character() {
         value_c1, value_c2, value_c3, value_c4, value_c5, value_c6
     );
 }
+
+fn main() {
+    testing_datatypes_character();
+}

@@ -1,10 +1,20 @@
+/*
+
+R/
+
+Usa este comando para ejecutar este código: cargo run --bin 8-DataTypes_String
+
+Fuente consultada:
+
+*/
+
 // - 2.4 - Data Structures - String -->
 fn testing_datatypes_string() {
     // Creando Strings
     let string1 = String::from("Hola mundo"); // usando from
-    let mut string2 = "Rust".to_string();     // usando to_string y mutable
-    string2.push_str " es genial!";            // agregar más texto
-    string2.push(' 🚀');                      // agregar un solo carácter
+    let mut string2 = "Rust".to_string(); // usando to_string y mutable
+    string2.push_str(" es genial!"); // agregar más texto
+    string2.push('🚀'); // agregar un solo carácter
 
     let string3 = String::new(); // string vacío
 
@@ -26,5 +36,8 @@ fn testing_datatypes_string() {
 
     // String ➔ cadena dinámica, vive en heap.
     // &str ➔ slice de string, prestado, más liviano.
-    
+}
+
+fn main() {
+    testing_datatypes_string();
 }

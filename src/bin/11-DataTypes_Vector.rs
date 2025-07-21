@@ -19,3 +19,7 @@ fn testing_datatypes_vector() {
         vector1[0], vector1[1], vector1[2]
     );
 }
+
+fn main() {
+    testing_datatypes_vector();
+}

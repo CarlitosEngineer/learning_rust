@@ -20,3 +20,7 @@ fn testing_datatypes_tuple() {
         tuple2.0, tuple2.1, tuple2.2
     );
 }
+
+fn main() {
+    testing_datatypes_tuple();
+}

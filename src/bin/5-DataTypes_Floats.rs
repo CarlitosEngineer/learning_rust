@@ -37,3 +37,7 @@ fn testing_datatypes_floats() {
         inf_f64, neg_inf_f64, nan_f64, min_f64, max_f64
     );
 }
+
+fn main() {
+    testing_datatypes_floats();
+}

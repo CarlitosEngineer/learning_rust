@@ -31,3 +31,7 @@ fn testing_datatypes_hashset() {
         println!("{}", color);
     }
 }
+
+fn main() {
+    testing_datatypes_hashset();
+}

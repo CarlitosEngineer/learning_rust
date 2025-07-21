@@ -5,3 +5,7 @@ fn testing_datatypes_boolean() {
 
     println!("testing_datatypes_boolean: {}, {}", value_b1, value_b2);
 }
+
+fn main() {
+    testing_datatypes_boolean();
+}

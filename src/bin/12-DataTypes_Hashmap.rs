@@ -32,3 +32,7 @@ fn testing_datatypes_hashmap() {
         println!("{}: {}", key, value);
     }
 }
+
+fn main() {
+    testing_datatypes_hashmap()
+}

@@ -29,3 +29,7 @@ fn testing_datatypes_queue() {
         println!("{}", value);
     }
 }
+
+fn main() {
+    testing_datatypes_queue();
+}

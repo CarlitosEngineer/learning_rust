@@ -35,3 +35,7 @@ fn testing_datatypes_linkedlist() {
         println!("{}", value);
     }
 }
+
+fn main() {
+    testing_datatypes_linkedlist();
+}

@@ -43,3 +43,7 @@ fn testing_datatypes_binaryheap() {
 // if let Some(Reverse(min)) = min_heap.peek() {
 //     println!("Valor mínimo en el min-heap: {}", min);
 // }
+
+fn main() {
+    testing_datatypes_binaryheap();
+}
