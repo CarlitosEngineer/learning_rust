@@ -1,11 +1,3 @@
-// - 2.4 - Data Structures - Boolean -->
-fn testing_datatypes_boolean() {
-    let value_b1: bool = true; // verdadero
-    let value_b2: bool = false; // falso
-
-    println!("testing_datatypes_boolean: {}, {}", value_b1, value_b2);
-}
-
 // Character -->
 fn testing_datatypes_character() {
     let value_c1: char = 'A'; // letra mayúscula

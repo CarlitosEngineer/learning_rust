@@ -12,6 +12,8 @@ Fuente consultada:
   https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html
 */
 
+const VARIABLE_CONST1: u32 = 100;
+
 fn learning_mutability1() {
     let variable_1 = 0; // No Mutable
     let mut variable_2 = 0; // Mutable
@@ -21,6 +23,7 @@ fn learning_mutability1() {
 
     println!("El valor 3 es: {}", variable_1);
     println!("El valor 3 es: {}", variable_2);
+    println!("El valor 3 es: {}", VARIABLE_CONST1);
 }
 
 fn main() {

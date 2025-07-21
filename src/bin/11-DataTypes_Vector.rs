@@ -2,7 +2,7 @@
 fn testing_datatypes_vector() {
     // Creando vectores
     let vector1: Vec<i32> = vec![1, 2, 3, 4, 5]; // vector inicializado con valores
-    let mut vector2: Vec<i32> = Vec::new();       // vector vacío mutable
+    let mut vector2: Vec<i32> = Vec::new(); // vector vacío mutable
     vector2.push(10);
     vector2.push(20);
     vector2.push(30);

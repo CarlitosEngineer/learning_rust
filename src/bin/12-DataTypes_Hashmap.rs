@@ -13,7 +13,8 @@ fn testing_datatypes_hashmap() {
     let teams = vec!["Amarillo", "Verde"];
     let initial_scores = vec![30, 40];
 
-    let hashmap_from_vec: HashMap<_, _> = teams.into_iter().zip(initial_scores.into_iter()).collect();
+    let hashmap_from_vec: HashMap<_, _> =
+        teams.into_iter().zip(initial_scores.into_iter()).collect();
 
     // Acceder a un valor
     if let Some(score) = scores.get("Azul") {
