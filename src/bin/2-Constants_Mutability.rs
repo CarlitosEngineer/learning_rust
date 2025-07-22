@@ -12,7 +12,7 @@ Fuente consultada:
   https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html
 */
 
-const VARIABLE_CONST1: u32 = 100;
+const VARIABLE_CONST1: u32 = 100; // Como declarar una constante
 
 fn learning_mutability1() {
     let variable_1 = 0; // No Mutable
