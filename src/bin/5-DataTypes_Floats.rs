@@ -1,43 +1,42 @@
-// - 2.4 - Data Structures - Floats -->
 fn testing_datatypes_floats() {
-    // Valores normales
-    let value_f1: f32 = 3.1415927; // ejemplo f32 positivo
-    let value_f2: f32 = -2.7182818; // ejemplo f32 negativo
-    let value_f3: f64 = 3.141592653589793; // ejemplo f64 positivo
-    let value_f4: f64 = -2.718281828459045; // ejemplo f64 negativo
-
-    // Valores especiales f32
-    let inf_f32: f32 = f32::INFINITY; // infinito positivo
-    let neg_inf_f32: f32 = f32::NEG_INFINITY; // infinito negativo
-    let nan_f32: f32 = f32::NAN; // Not a Number
-    let min_f32: f32 = f32::MIN; // valor mínimo representable (negativo más grande)
-    let max_f32: f32 = f32::MAX; // valor máximo representable (positivo más grande)
-
-    // Valores especiales f64
-    let inf_f64: f64 = f64::INFINITY;
-    let neg_inf_f64: f64 = f64::NEG_INFINITY;
-    let nan_f64: f64 = f64::NAN;
-    let min_f64: f64 = f64::MIN;
-    let max_f64: f64 = f64::MAX;
-
-    println!(
-        "testing_datatypes_floats - f32 normales: {}, {}",
-        value_f1, value_f2
-    );
-    println!(
-        "testing_datatypes_floats - f64 normales: {}, {}",
-        value_f3, value_f4
-    );
-    println!(
-        "testing_datatypes_floats - f32 especiales: INF = {}, NEG_INF = {}, NAN = {}, MIN = {}, MAX = {}",
-        inf_f32, neg_inf_f32, nan_f32, min_f32, max_f32
-    );
-    println!(
-        "testing_datatypes_floats - f64 especiales: INF = {}, NEG_INF = {}, NAN = {}, MIN = {}, MAX = {}",
-        inf_f64, neg_inf_f64, nan_f64, min_f64, max_f64
-    );
+    let variable_01: f32 = 3.1415927; // Ejemplo f32 positivo
+    let variable_02: f32 = -2.7182818; // Ejemplo f32 negativo
+    let variable_03: f64 = 3.141592653589793; // Ejemplo f64 positivo
+    let variable_04: f64 = -2.718281828459045; // Ejemplo f64 negativo
+    println!("f32 positivo: {}", variable_01);
+    println!("f32 negativo: {}", variable_02);
+    println!("f64 positivo: {}", variable_03);
+    println!("f64 negativo: {}", variable_04);
+    println!("f32 MIN_POSITIVE: {}", f32::MIN_POSITIVE); // IMPRIME LOS VALORES MAS PEQUELOS POSIBLES 32BITS
+    println!("f64 MIN_POSITIVE: {}", f64::MIN_POSITIVE); // IMPRIME LOS VALORES MAS PEQUELOS POSIBLES 64BITS
+    println!("f32 MAX: {}", f32::MAX); // ~3.40282347e+38
+    println!("f64 MAX: {}", f64::MAX); // ~1.7976931348623157e+308
+    println!("f32 MIN: {}", f32::MIN); // ~-3.40282347e+38
+    println!("f64 MIN: {}", f64::MIN); // ~-1.7976931348623157e+308
+    println!("------ VALORES NORMALES ------");
+    println!("f32 positivo: {}", variable_01);
 }
 
 fn main() {
     testing_datatypes_floats();
 }
+
+/*
+
+* Un float es un número con decimales (punto flotante), usado para representar valores reales.
+
+| Tipo  | Bits | Precisión       | Rango aprox.                    |
+| ----- | ---- | --------------- | ------------------------------- |
+| `f32` | 32   | \~7 dígitos     | ±1.175494e-38 a ±3.402823e+38   |
+| `f64` | 64   | \~15-17 dígitos | ±2.225073e-308 a ±1.797693e+308 |
+
+Usa este comando para ejecutar este código: cargo run --bin 5-DataTypes_Floats
+
+- The Rust Programming Language, Capítulo 3.1: Variables and Mutability
+    https://doc.rust-lang.org/book/ch03-02-data-types.html
+
+* ¡Cuándo NO usar float! No uses float cuando necesitas exactitud total en decimales, por ejemplo: Dinero 💰, Cálculos bancarios, Contabilidad
+* SE RECOMIENDA USAR LIBRERIA → En esos casos, usa tipos como Decimal del crate rust_decimal.
+    // https://docs.rs/rust_decimal/latest/rust_decimal/
+
+*/
