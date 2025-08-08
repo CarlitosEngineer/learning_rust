@@ -1,13 +1,15 @@
 // - 2.4 - Data Structures - Array -->
 fn testing_datatypes_array() {
     // Declarando arrays de enteros
-    let array1: [i32; 5] = [1, 2, 3, 4, 5]; // array de 5 elementos
-    let array2: [i32; 5] = [0; 5]; // array con 5 ceros
-    let array3: [i32; 3] = [10, 20, 30]; // array más pequeño
-
+    let array1: [i32; 5] = [1, 2, 3, 4, 5]; // Sintaxis para Tipo y Longitud
+    let array2: [i32; 5] = [0; 5]; // Inicializar con el Mismo Valor {// [3, 3, 3, 3, 3]}
     println!("testing_datatypes_array - array1: {:?}", array1);
     println!("testing_datatypes_array - array2: {:?}", array2);
-    println!("testing_datatypes_array - array3: {:?}", array3);
+
+    let primero = array1[0]; // acceder a un arreglo
+    let segundo = array1[1];
+    println!("testing_datatypes_array - array1: {:?}", primero);
+    println!("testing_datatypes_array - array1: {:?}", segundo);
 
     // Acceso individual
     println!(
@@ -19,3 +21,16 @@ fn testing_datatypes_array() {
 fn main() {
     testing_datatypes_array();
 }
+
+/*
+
+* Colección de tamaño fijo
+* Elementos del mismo tipo
+* Se almacenan en la pila (stack)
+* Usa array si el tamaño es fijo.
+* Usa vector (Vec<T>) si el tamaño debe ser dinámico.
+
+Source: https://doc.rust-lang.org/book/ch03-02-data-types.html#the-array-type
+
+📌 Run this code using: cargo run --bin 10-DataTypes_Array
+*/

@@ -16,3 +16,11 @@ fn testing_datatypes_character() {
 fn main() {
     testing_datatypes_character();
 }
+
+/*
+
+Source: https://doc.rust-lang.org/book/ch03-02-data-types.html#the-character-type
+
+📌 Run this code using: cargo run --bin 7-DataTypes_Character
+
+*/

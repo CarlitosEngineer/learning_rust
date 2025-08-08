@@ -23,7 +23,7 @@ fn main() {
 * las variables se declaran con ´let´, ´let mut´, ´const´.
 * En Rust, la declaración de variables se denomina “binding” (vinculación).
 
-Usa este comando para ejecutar este código: cargo run --bin 1-Variables
+📌 Run this code using: cargo run --bin 1-Variables
 
 Fuente consultada:
 

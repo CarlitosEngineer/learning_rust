@@ -1,7 +1,7 @@
 fn learning_mutability1() {
-    const VARIABLE_CONST1: u32 = 100; // DECLARAMOS UNA CONSTANTE
-    let variable_1 = 0; // NO MUTABLE
-    let mut variable_2 = 0; // MUTABLE
+    const VARIABLE_CONST1: u32 = 100; // [ NOT MUTABLE , UNSIGNED]
+    let variable_1 = -2147483648; // [ NOT MUTABLE , INFERIDO(INPLICITO), 32BITS POR DEFECTO]
+    let mut variable_2: i64 = -9223372036854775808; // [ MUTABLE, NOT INFERIDO(EXPLICITO) ]
 
     // variable_1 += 1; // NOT OK
     variable_2 += 1; // OK
@@ -25,7 +25,7 @@ R/
 * La mutabilidad es la capacidad que tiene una variable de cambiar su valor durante la ejecutacion del programa.
 * En Rust, las variables son inmutables por defecto; para hacerlas mutables se usa `mut`.
 
-Usa este comando para ejecutar este código: cargo run --bin 2-Constants_Mutability
+📌 Run this code using: cargo run --bin 2-Constants_Mutability
 
 Fuente consultada:
 

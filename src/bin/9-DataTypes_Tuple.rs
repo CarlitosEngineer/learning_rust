@@ -24,3 +24,9 @@ fn testing_datatypes_tuple() {
 fn main() {
     testing_datatypes_tuple();
 }
+
+/*
+Source: https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type
+
+📌 Run this code using: cargo run --bin 9-DataTypes_Tuple
+*/

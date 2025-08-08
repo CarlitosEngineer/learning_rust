@@ -1,5 +1,5 @@
 fn testing_datatypes_integers() {
-    // Unsigne
+    // UNSIGNED
     let variable_u1: u8 = 255; // de 0 a 255
     let variable_u2: u16 = 65535; // de 0 a 65,535
     let variable_u3: u32 = 4294967295; // de 0 a 4,294,967,295
@@ -9,7 +9,7 @@ fn testing_datatypes_integers() {
     // - 32 bits: 0 a 4,294,967,295 (usize)
     // - 64 bits: 0 a 18,446,744,073,709,551,615 (usize)
 
-    // Signe
+    // SIGNED
     let variable_i1: i8 = -128; // -128 a 127
     let variable_i2: i16 = -32768; // -32,768 a 32,767
     let variable_i3: i32 = -2147483648; // -2,147,483,648 a 2,147,483,647
@@ -60,7 +60,7 @@ fn main() {
 - Cuando no se especifica el tipo de entero, rust por defecto usa i32
 - Existe otra forma de declrar una varaible usando "sufijos"
 
-Usa este comando para ejecutar este código: cargo run --bin 4-DataTypes_Integers
+📌 Run this code using: cargo run --bin 4-DataTypes_Integers
 
 - The Rust Programming Language, Capítulo 3.1: Variables and Mutability
     https://doc.rust-lang.org/book/ch03-02-data-types.html

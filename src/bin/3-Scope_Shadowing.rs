@@ -34,7 +34,7 @@ fn main() {
 * Entorno o Bloque: Es un bloque en el codigo.
 * El Shadowing (sombreado): es la redeclracion de una variable con el mismo nombre, creando una nueva.
 
-Usa este comando para ejecutar este código: cargo run --bin 3-Scope_Shadowing
+📌 Run this code using: cargo run --bin 3-Scope_Shadowing
 
 Fuente consultada:
 

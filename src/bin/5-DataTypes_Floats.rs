@@ -30,13 +30,11 @@ fn main() {
 | `f32` | 32   | \~7 dígitos     | ±1.175494e-38 a ±3.402823e+38   |
 | `f64` | 64   | \~15-17 dígitos | ±2.225073e-308 a ±1.797693e+308 |
 
-Usa este comando para ejecutar este código: cargo run --bin 5-DataTypes_Floats
-
-- The Rust Programming Language, Capítulo 3.1: Variables and Mutability
-    https://doc.rust-lang.org/book/ch03-02-data-types.html
-
 * ¡Cuándo NO usar float! No uses float cuando necesitas exactitud total en decimales, por ejemplo: Dinero 💰, Cálculos bancarios, Contabilidad
 * SE RECOMIENDA USAR LIBRERIA → En esos casos, usa tipos como Decimal del crate rust_decimal.
     // https://docs.rs/rust_decimal/latest/rust_decimal/
+
+📌 Run this code using: cargo run --bin 5-DataTypes_Floats
+* Source: https://doc.rust-lang.org/book/ch03-02-data-types.html#floating-point-types
 
 */
