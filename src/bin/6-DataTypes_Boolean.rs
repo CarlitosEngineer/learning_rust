@@ -1,8 +1,7 @@
 fn testing_datatypes_booleans() {
-
-
+    let a: bool = true; // verdadero
+    let b: bool = false; // falso
     println!("a: {}, b: {}", a, b);
-
     println!("a AND b: {}", a && b); // false
     println!("a OR b : {}", a || b); // true
     println!("NOT a  : {}", !a); // false
