@@ -24,7 +24,7 @@ El contenido está organizado de manera clara para facilitar la navegación, el 
 │   └── Hojas de trucos y comandos útiles en formato Markdown (.md)
 ```
 
-### 📂 `src/bin/`
+### 📂 `src/resource/`
 
 Contiene archivos ejecutables de Rust (`*.rs`) con ejemplos prácticos, enfocados al testeo y comprensión de distintas características del lenguaje.
 
